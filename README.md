@@ -1,18 +1,18 @@
-# With inspiration from
+[-] With inspiration from
 
 https://github.com/codedecode25/Microservices_vaccination_citizen
 
 # Endpoints
 
-## Eureka Server
+### Eureka Server
 
 http://localhost:8761
 
-## citizen-service
+### citizen-service
 
 - http://localhost:8081
 
-# crud:
+### crud:
 
 - Get citizens by vaccination id: http://localhost:8081/citizen/id/{id}
 - Add citizen: http://localhost:8081/citizen/add
@@ -22,11 +22,11 @@ http://localhost:8761
   "vaccinationCenterId": 1
 }`
 
-## vaccination-center
+### vaccination-center
 
 - http://localhost:8082
 
-# crud:
+### crud:
 
 - Get vaccination center: http://localhost:8082/vaccination/center/id/{id}
 
