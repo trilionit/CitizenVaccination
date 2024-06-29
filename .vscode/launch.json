@@ -1,0 +1,51 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "EurekaServerApplication",
+      "request": "launch",
+      "mainClass": "com.microservices.eureka_server.EurekaServerApplication"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-CitizenServiceApplication<CitizenService>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.microservices.CitizenService.CitizenServiceApplication",
+      "projectName": "CitizenService",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=59503 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=CitizenService"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-EurekaServerApplication<eureka-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.microservices.eureka_server.EurekaServerApplication",
+      "projectName": "eureka-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-EurekaServerApplication<eureka-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.microservices.EurekaServer.EurekaServerApplication",
+      "projectName": "eureka-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-VaccinationCenterApplication<vaccination-center>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.microservices.VaccinatonCenter.VaccinationCenterApplication",
+      "projectName": "vaccination-center",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
